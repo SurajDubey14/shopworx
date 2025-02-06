@@ -7,7 +7,7 @@ import Provision from "./pages/Provision/Provision";
 import User from "./pages/Users/User";
 import Report from "./pages/Report/Report";
 import Application from "./pages/Apps/Application";
-
+ import ViewPlan from "./pages/ViewPlan/ViewPlan"
 const AppRoutes = () => {
   return (
     <Router>
@@ -19,7 +19,8 @@ const AppRoutes = () => {
           <Route path="/users" element={<User />} />{" "}
           <Route path="/provision" element={<Provision />} />{" "}
           <Route path="/reports" element={<Report />} />{" "}
-          <Route path="/graphs" element={<Graph />} />{" "}
+          
+          <Route path="/graphs" element={<Graph />} />{" "}<Route path="/view" element={<ViewPlan/>} />{" "}
         </Routes>
       </Layout>
     </Router>
