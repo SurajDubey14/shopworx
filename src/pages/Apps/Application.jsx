@@ -3,44 +3,44 @@ import ApplicationCard from "../../components/ApplicationCard";
 
 const applications = [
   {
-    icon: "AiOutlineFile",
+    img: "/images/filemanager.png",
     text: "File Manager"
   },
   {
-    icon: "AiOutlineCalendar",
+    img: "/images/planningapp.png",
     text: "Machine Planning App"
   },
   {
-    icon: "AiOutlineCheckSquare",
+    img: "/images/productionlog.png",
     text: "Production Log App"
   },
   {
-    icon: "AiOutlineDashboard",
+    img: "/images/modelgraph.png",
     text: "Model Change Dashboard"
   },
   {
-    icon: "AiOutlineOrderedList",
+    img: "/images/checklist.png",
     text: "Mould Checklist App"
   },
   {
-    icon: "AiOutlineSync",
+    img: "/images/modelchangeplan.png",
     text: "Model Change Plan App"
   },
   {
-    icon: "AiOutlineProfile",
+    img: "/images/SOP.png",
     text: "SOP App"
   },
   {
-    icon: "AiOutlineBarChart",
+    img: "/images/machinestatus.png",
     text: "Machine Status Dashboard"
   }
 ];
 
 const Application = () => {
   return (
-    <div className="grid grid-cols-4 gap-4 p-4">
+    <div className="grid grid-cols-5 gap-4 p-4">
       {applications.map((app, index) => (
-        <ApplicationCard key={index} icon={app.icon} text={app.text} />
+        <ApplicationCard key={index} text={app.text} image={app.img} />
       ))}
     </div>
   )

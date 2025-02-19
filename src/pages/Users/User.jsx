@@ -12,7 +12,7 @@ const User = () => {
   ];
 
   return (
-    <div className="flex flex-wrap gap-4 p-6 bg-gray-100 ">
+    <div className="flex flex-wrap gap-4 p-6 ">
       {users.map((user, index) => (
         <UserProfile key={index} username={user.username} Admin={user.Admin} />
       ))}
