@@ -9,6 +9,7 @@ import Report from "./pages/Report/Report";
 import Application from "./pages/Apps/Application";
  import ViewPlan from "./pages/ViewPlan/ViewPlan";
 import Production from "./pages/Production/Production";
+import Production1 from "./pages/Production/Production1";
 
 const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
           <Route path="/users" element={<User />} />{" "}
           <Route path="/provision" element={<Provision />} />{" "}
           <Route path="/reports" element={<Report />} />{" "}
+          <Route path="/production1" element={<Production1 />} />{" "}
           <Route path="/production" element={<Production />} />{" "}
 
           
