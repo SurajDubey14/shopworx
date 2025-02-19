@@ -11,6 +11,15 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { PieChart, Pie, Cell } from "recharts";
+const pieData = [
+  { name: "Category A", value: 400 },
+  { name: "Category B", value: 300 },
+  { name: "Category C", value: 300 },
+  { name: "Category D", value: 200 },
+];
+
+const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 const data = [
   { month: "Jan", sales: 4000, revenue: 2400, orders: 240, users: 300 },
@@ -42,6 +51,26 @@ const machines = [
 const Dashboard = () => {
   return (
     <>
+    <div className="flex justify-center items-center h-64">
+      <PieChart width={400} height={200}>
+        <Pie
+          data={pieData}
+          cx={200}
+          cy={200}
+          startAngle={180}
+          endAngle={0}
+          innerRadius={60}
+          outerRadius={100}
+          fill="#8884d8"
+          paddingAngle={5}
+          dataKey="value"
+        >
+          {pieData.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          ))}
+        </Pie>
+      </PieChart>
+    </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
         {/* Chart 1: Sales Overview (Bar + Line) */}
         <div className="p-4 bg-white shadow-lg rounded-lg">
