@@ -11,7 +11,7 @@ const Downtime = () => {
   const [selectedReason, setSelectedReason] = useState("");
 
   return (
-    <div className="max-w-4xl mx-auto bg-white shadow-md p-4">
+    <div className="">
       <h2 className="text-lg font-semibold text-gray-900">01-200T | Cell-1</h2>
       
       {downtimeData.map((entry, index) => (
@@ -28,7 +28,7 @@ const Downtime = () => {
           <div className="p-4 bg-gray-100 rounded-b-lg">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="text-gray-700">
+                <tr className="text-gray-700 text-center">
                   <th className="p-2 text-red-600">Downtime</th>
                   <th className="p-2">From</th>
                   <th className="p-2">To</th>
@@ -41,7 +41,7 @@ const Downtime = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white">
+                <tr className="bg-white text-center">
                   <td className="p-2 text-red-600 font-semibold">{entry.duration}</td>
                   <td className="p-2">{entry.from}</td>
                   <td className="p-2">{entry.to}</td>

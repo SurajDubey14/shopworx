@@ -12,9 +12,7 @@ import Production from "./pages/Production/Production";
 import Downtime from "./pages/Downtime/Downtime";
 import Rejection from "./pages/Rejection/Rejection";
 import OEE from "./pages/OEE/OEE";
-import MachineDashboard from "./pages/Rejection/MachineDashboard/MachineDashboard.jsx";
-import ProductionDashboard from "./pages/Rejection/MachineDashboard/ProductionDashboard/ProductionDashboard.jsx";
-
+import MachineDashboard from "./pages//MachineDashboard/MachineDashboard.jsx";
 const AppRoutes = () => {
   return (
     <Router>
@@ -33,7 +31,6 @@ const AppRoutes = () => {
           <Route path="/rejection" element={<Rejection />} />{" "}
           <Route path="/oee" element={<OEE />} />{" "}
           <Route path="/machine" element={<MachineDashboard />} />{" "}
-          <Route path="/productiondashboard" element={<ProductionDashboard />} />{" "}
         </Routes>
       </Layout>
     </Router>
