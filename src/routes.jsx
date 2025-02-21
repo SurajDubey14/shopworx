@@ -13,7 +13,7 @@ import Downtime from "./pages/Downtime/Downtime";
 import Rejection from "./pages/Rejection/Rejection";
 import OEE from "./pages/OEE/OEE";
 import MachineDashboard from "./pages/MachineDashboard/MachineDashboard.jsx";
-import Record from "./components/Record.jsx";
+import AddRecord from "./components/AddRecord.jsx";
 
 const AppRoutes = () => {
   return (
@@ -32,7 +32,7 @@ const AppRoutes = () => {
           <Route path="/downtime" element={<Downtime />} />{" "}
           <Route path="/rejection" element={<Rejection />} />{" "}
           <Route path="/oee" element={<OEE />} />{" "}
-          <Route path="/record" element={<Record />} />{" "}
+          <Route path="/record" element={<AddRecord />} />{" "}
           <Route path="/machine-dashboard" element={<MachineDashboard />} />{" "}
         </Routes>
       </Layout>

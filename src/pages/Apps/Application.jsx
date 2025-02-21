@@ -37,6 +37,7 @@ const applications = [
 ];
 
 const Application = () => {
+  
   return (
     <div className="grid grid-cols-5 gap-4 p-4">
       {applications.map((app, index) => (

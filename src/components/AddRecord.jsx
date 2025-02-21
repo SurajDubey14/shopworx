@@ -1,6 +1,6 @@
 import React from "react";
 
-const Record = () => {
+const AddRecord = () => {
   return (
     <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-xl font-semibold bg-black text-white py-1 pl-2 mb-4">Add Record</h2>
@@ -61,4 +61,4 @@ const Record = () => {
   );
 };
 
-export default Record;
+export default AddRecord;
